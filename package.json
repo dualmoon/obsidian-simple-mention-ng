@@ -1,5 +1,5 @@
 {
-	"name": "obsidian-simple-mention",
+	"name": "obsidian-simple-mention-ng",
 	"version": "0.1.0",
 	"description": "Get highlighted mentions and mention suggestions. Find all occurrences of a mention",
 	"main": "main.js",
@@ -8,7 +8,7 @@
 		"build": "node esbuild.config.mjs production"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Ashley Davis <ashley@airsi.de>",
 	"license": "MIT",
 	"devDependencies": {
 		"@codemirror/commands": "^6.0.1",
