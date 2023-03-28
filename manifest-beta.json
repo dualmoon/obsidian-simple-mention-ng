@@ -1,7 +1,7 @@
 {
   "id": "obsidian-simple-mention-ng",
   "name": "Simple Mention NG",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "minAppVersion": "0.15.4",
   "description": "Get highlighted mentions and mention suggestions. Find all occurrences of a mention",
   "author": "Ashley Davis <ashley@airsi.de>",
