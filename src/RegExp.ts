@@ -9,7 +9,8 @@ export function getMeMentionOrMentionRegex(trigger: string, meMentionName: strin
 }
 
 export function getMentionRegExp(trigger: string): RegExp {
-    return new RegExp(`(\\B${trigger}[\\p{L}0-9-_,]+|\\B${trigger}"[\\p{L}0-9-_, ]+")`, 'gmu');
+    /*return new RegExp(`(\\B${trigger}[\\p{L}0-9-_,]+|\\B${trigger}"[\\p{L}0-9-_, ]+")`, 'gmu');*/
+    return new RegExp(`(\\B${trigger}[\\p{L}\\/0-9-_,]+|\\B${trigger}"[\\p{L}\\/0-9-_, ]+")`, 'gmu');
 }
 
 export function getMeMentionRegExp(trigger: string, meMentionName: string): RegExp {
