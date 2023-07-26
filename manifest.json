@@ -1,10 +1,10 @@
 {
   "id": "obsidian-simple-mention",
-  "name": "Simple Mention",
-  "version": "1.0.1",
+  "name": "Simple Mention NG",
+  "version": "1.0.2",
   "minAppVersion": "0.15.4",
   "description": "Get highlighted mentions and mention suggestions. Find all occurrences of a mention",
-  "author": "der-tobi",
-  "authorUrl": "https://github.com/der-tobi",
+  "author": "dualmoon",
+  "authorUrl": "https://github.com/dualmoon",
   "isDesktopOnly": true
 }
