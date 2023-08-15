@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-simple-mention-ng",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Get highlighted mentions and mention suggestions. Find all occurrences of a mention",
 	"main": "main.js",
 	"scripts": {
