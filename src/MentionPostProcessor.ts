@@ -25,10 +25,10 @@ export class MentionPostProcessor {
         if (this.element.firstChild instanceof Node) {
             const nodes = this.getChildNodes(this.element);
 
-            for (let node of nodes) {
+            for (const node of nodes) {
                 if (node.parentElement.tagName === 'CODE') continue;
 
-                let replacementNodes = this.getReplacementNodesOrNull(node.textContent, this.meMentionOrMentionRegex);
+                const replacementNodes = this.getReplacementNodesOrNull(node.textContent, this.meMentionOrMentionRegex);
                 if (replacementNodes) {
                     node.replaceWith(...replacementNodes);
                 }

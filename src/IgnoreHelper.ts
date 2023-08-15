@@ -5,7 +5,7 @@ export function isFilePathInIgnoredDirectories(filePath: string, settings: Menti
         return directory.trim() != '' && path.startsWith(directory.trim());
     };
 
-    for (let ignoredDirectory of settings.ignoredDirectories.split(',')) {
+    for (const ignoredDirectory of settings.ignoredDirectories.split(',')) {
         if (isDirectoryInPath(ignoredDirectory, filePath)) {
             return true;
         }

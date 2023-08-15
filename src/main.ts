@@ -11,7 +11,6 @@ import { getMeMentionOrMentionRegex } from './RegExp';
 import { DEFAULT_SETTINGS, MentionSettings, MentionSettingsTab, normalizeIgnoredPaths } from './Settings';
 import { Style } from './Style';
 
-const x = require('electron');
 
 export default class MentionPlugin extends Plugin {
     private cache: Cache | undefined;

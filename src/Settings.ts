@@ -39,7 +39,7 @@ export class MentionSettingsTab extends PluginSettingTab {
     }
 
     public display(): void {
-        let { containerEl } = this;
+        const { containerEl } = this;
         containerEl.empty();
 
         new Setting(containerEl)

@@ -93,7 +93,7 @@ export class MentionSuggest extends EditorSuggest<Completition> {
     private async getMentionSuggestions(context: EditorSuggestContext): Promise<Completition[]> {
         const result: string[] = [];
 
-        for (let mention of await this.cache.getAllMentions()) {
+        for (const mention of await this.cache.getAllMentions()) {
             if (mention.toLocaleLowerCase().contains(context.query.toLocaleLowerCase())) {
                 result.push(mention);
             }

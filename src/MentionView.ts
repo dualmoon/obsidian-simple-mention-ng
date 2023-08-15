@@ -22,11 +22,11 @@ export class MentionView extends ItemView {
     private container: HTMLDivElement;
     private controlsContainer: HTMLDivElement;
     private listContainer: HTMLDivElement;
-    private mentionSelectValue: string = '';
+    private mentionSelectValue = '';
     private simpleFilterInput: HTMLInputElement;
     private includeCompletedCheckbox: HTMLDivElement;
     private includeCompletedLabel: HTMLDivElement;
-    private includeCompleted: boolean = false;
+    private includeCompleted = false;
     private onActiveLeafChangeEventRef: EventRef;
     private occurences: IOccurence[] = [];
     private get mentionSelectElement(): any {

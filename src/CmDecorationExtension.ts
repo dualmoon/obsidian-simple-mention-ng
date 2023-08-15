@@ -30,13 +30,13 @@ export function getCmDecorationExtension(app: App, cfg: CmDecorationExtensionCon
             }
 
             addDecorations(view: EditorView) {
-                let rangeSetBuilder = new RangeSetBuilder<Decoration>();
+                const rangeSetBuilder = new RangeSetBuilder<Decoration>();
 
                 if (isFilePathInIgnoredDirectories(app.workspace.getActiveFile().path, settings)) return rangeSetBuilder.finish();
 
-                let mentionRegexp = cfg.regexp;
-                for (let { from, to } of view.visibleRanges) {
-                    let range = view.state.sliceDoc(from, to);
+                const mentionRegexp = cfg.regexp;
+                for (const { from, to } of view.visibleRanges) {
+                    const range = view.state.sliceDoc(from, to);
                     let mentions = [...range.matchAll(mentionRegexp)];
 
                     const codeblockPositions: [from: number, to: number][] = getCodeblockPositions(range, from);
@@ -72,7 +72,7 @@ export function getCmDecorationExtension(app: App, cfg: CmDecorationExtensionCon
                     }
                 },
                 mousedown: (e, view) => {
-                    let target = e.target as HTMLElement;
+                    const target = e.target as HTMLElement;
 
                     if (e.ctrlKey) {
                         if (

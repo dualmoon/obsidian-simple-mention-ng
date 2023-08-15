@@ -1,8 +1,7 @@
 import { CODEBLOCK_REG_EXP } from './RegExp';
 
-export function getCodeblockPositions(text: string, startIndex: number = 0): [from: number, to: number][] {
+export function getCodeblockPositions(text: string, startIndex = 0): [from: number, to: number][] {
     const codeblocks = [...text.matchAll(CODEBLOCK_REG_EXP)];
-    let codeblockPositions: [from: number, to: number][] = [];
     return codeblocks.map((c) => [startIndex + c.index, startIndex + c.index + c[0].length]);
 }
 
